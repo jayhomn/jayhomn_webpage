@@ -1,49 +1,123 @@
 html,
 body {
-  margin: 0 auto;
   height: 100%;
-  width: 100%;
-}
-body {
-  background-color: black;
+  margin: 0;
 }
 
-#growContainer {
-  display: table;
-  width: 100%;
-  height: 100%;
+.intro-div {
+  width: 65rem;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 15rem;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 1;
 }
-.grow {
-  font-family: "Roboto", serif;
-  font-weight: bold;
-  font-size: 3rem;
-  color: white;
+
+.light {
+  font-family: "Roboto", "Serif";
+  font-weight: 300;
+}
+
+.regular {
+  font-family: "Roboto", "Serif";
+  font-weight: 400;
+}
+
+.intro-header1 {
+  font-size: 3.8rem;
+}
+
+.intro-paragraph {
+  font-size: 2.2rem;
+}
+.scroll-div {
+  padding-top: 8rem;
   text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+  opacity: 1;
+}
+
+.scroll-indicator {
+  opacity: 1;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.41);
+}
+
+.intro-background-div {
   height: 100%;
-  width: 50%;
-  -webkit-transition: width 500ms;
-  -moz-transition: width 500ms;
-  transition: width 500ms;
-}
-#growContainer:hover .grow {
-  width: 45%;
-}
-#growContainer:hover .grow:hover {
-  width: 60%;
+  background: hsl(0, 8%, 85%);
+  animation: background-colour-change 5s infinite;
+  -webkit-animation: background-colour-change 5s infinite;
 }
 
-.cooking {
-  background-color: #274257;
-  background-image: url("../images/food-landing.jpg");
-  background-size: 80rem;
-  background-repeat: no-repeat;
+@keyframes background-colour-change {
+  0% {
+    background-color: hsl(0, 8%, 85%);
+  }
+  50% {
+    background-color: hsl(170, 8%, 85%);
+  }
+  100% {
+    background-color: hsl(350, 8%, 85%);
+  }
 }
 
-.coding {
-  background-color: #2a75a9;
-  background-image: url("../images/coding-landing.png");
-  background-size: 80rem;
-  background-repeat: no-repeat;
+@-webkit-keyframes background-colour-change {
+  0% {
+    background-color: hsl(0, 8%, 85%);
+  }
+  50% {
+    background-color: hsl(170, 8%, 85%);
+  }
+  100% {
+    background-color: hsl(350, 8%, 85%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animated-delay {
+  animation-delay: 0.4s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+  opacity: 0;
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
 }
