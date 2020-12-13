@@ -179,9 +179,9 @@ body {
 .grow-container {
   opacity: 0;
   display: table;
-  width: 90%;
-  height: 86%;
-  padding-top: 2rem;
+  width: 92%;
+  height: 95%;
+  padding-top: 0.6rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -208,7 +208,7 @@ body {
   color: white;
   background-image: url("../images/coding-landing.png");
   background-repeat: no-repeat;
-  background-size: 63rem;
+  background-size: 68rem;
   background-position: -7rem -7rem;
 }
 
@@ -232,6 +232,6 @@ body {
   color: white;
   background-image: url("../images/lifestyle-landing.jpg");
   background-repeat: no-repeat;
-  background-size: 80rem;
-  background-position: -15rem -12rem;
+  background-size: 90rem;
+  background-position: -21rem -12rem;
 }
