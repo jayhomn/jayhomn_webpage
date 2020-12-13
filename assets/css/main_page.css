@@ -52,12 +52,38 @@ body {
   padding-top: 8rem;
   text-align: center;
   opacity: 1;
+  animation: scroll-pulse 3s infinite;
+  -webkit-animation: scroll-pulse 3s infinite;
 }
 
 .scroll-indicator {
   opacity: 1;
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.41);
+}
+
+@keyframes scroll-pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes scroll-pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 .intro-background-div {
