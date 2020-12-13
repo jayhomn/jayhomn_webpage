@@ -11,6 +11,7 @@ $(document).ready(function () {
           scroll = 0;
           $(".intro-div").show();
           $(".grow-container").hide();
+          $(".grow-container").css("opacity", "0");
           $(".select-background-div").animate(
             {
               backgroundColor: " hsl(0, 8%, 85%)",
