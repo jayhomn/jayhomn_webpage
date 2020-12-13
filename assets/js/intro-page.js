@@ -51,6 +51,15 @@ $(document).ready(function () {
               // Animation complete.
               $(".intro-div").hide();
               $(".grow-container").show();
+              $(".grow-container").animate(
+                {
+                  opacity: 1,
+                },
+                1000,
+                function () {
+                  // Animation complete.
+                }
+              );
             }
           );
           $(".app-bar").animate(

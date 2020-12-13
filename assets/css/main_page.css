@@ -177,6 +177,7 @@ body {
 }
 
 .grow-container {
+  opacity: 0;
   display: table;
   width: 90%;
   height: 86%;
