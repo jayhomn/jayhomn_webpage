@@ -2,13 +2,30 @@ html,
 body {
   height: 100%;
   margin: 0;
+  overflow: hidden;
+}
+
+.app-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.bar-signature {
+  margin-left: 53.1rem;
 }
 
 .intro-div {
   width: 65rem;
   text-align: justify;
   text-justify: inter-word;
-  padding-top: 15rem;
+  padding-top: 10rem;
   margin-right: auto;
   margin-left: auto;
   opacity: 1;
@@ -45,9 +62,14 @@ body {
 
 .intro-background-div {
   height: 100%;
-  background: hsl(0, 8%, 85%);
+  background-color: rgb(23, 23, 23);
   animation: background-colour-change 5s infinite;
   -webkit-animation: background-colour-change 5s infinite;
+}
+
+.select-background-div {
+  height: 100%;
+  background-color: hsl(0, 8%, 85%);
 }
 
 @keyframes background-colour-change {
@@ -120,4 +142,63 @@ body {
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
+}
+
+.grow-container {
+  display: table;
+  width: 90%;
+  height: 86%;
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grow {
+  display: table-cell;
+  height: 100%;
+  width: 25%;
+  -webkit-transition: width 500ms;
+  -moz-transition: width 500ms;
+  transition: width 500ms;
+}
+.grow-container:hover .grow {
+  width: 20%;
+}
+.grow-container:hover .grow:hover {
+  width: 40%;
+}
+
+.coding-section {
+  padding-top: 22rem;
+  font-size: 3.4rem;
+  text-align: center;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 76);
+  color: white;
+  background-image: url("../images/coding-landing.png");
+  background-repeat: no-repeat;
+  background-size: 63rem;
+  background-position: -7rem -7rem;
+}
+
+.cooking-section {
+  padding-top: 22rem;
+  font-size: 3.4rem;
+  text-align: center;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 76);
+  color: white;
+  background-image: url("../images/food-landing.jpg");
+  background-repeat: no-repeat;
+  background-size: 80rem;
+  background-position: -7rem -7rem;
+}
+
+.lifestyle-section {
+  padding-top: 22rem;
+  font-size: 3.4rem;
+  text-align: center;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 76);
+  color: white;
+  background-image: url("../images/lifestyle-landing.jpg");
+  background-repeat: no-repeat;
+  background-size: 80rem;
+  background-position: -15rem -12rem;
 }

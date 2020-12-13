@@ -1,16 +1,65 @@
 $(document).ready(function () {
   console.log("ready!");
   var scroll = 0;
+  $(".grow-container").hide();
   window.addEventListener("wheel", function (event) {
     if (event.deltaY < 0) {
       scroll--;
       if (scroll <= 0) {
         scroll = 0;
+        $(".intro-div").show();
+        $(".grow-container").hide();
+        $(".select-background-div").animate(
+          {
+            backgroundColor: " hsl(0, 8%, 85%)",
+          },
+          500,
+          function () {
+            // Animation complete.
+            $(".select-background-div")
+              .removeClass("select-background-div")
+              .addClass("intro-background-div");
+          }
+        );
+        $(".app-bar").animate(
+          {
+            color: "black",
+          },
+          600,
+          function () {
+            // Animation complete.
+            console.log("hit");
+          }
+        );
       }
     } else if (event.deltaY > 0) {
       scroll++;
       if (scroll >= 4) {
         scroll = 4;
+        $(".intro-background-div")
+          .removeClass("intro-background-div")
+          .addClass("select-background-div");
+        $(".select-background-div").animate(
+          {
+            backgroundColor: "rgb( 23, 23, 23 )",
+          },
+          600,
+          function () {
+            // Animation complete.
+            $(".intro-div").hide();
+            $(".grow-container").show();
+          }
+        );
+        $(".app-bar").animate(
+          {
+            color: "rgba( 255, 255, 255,54 )",
+          },
+          600,
+          function () {
+            // Animation complete.
+            console.log("hit");
+          }
+        );
       }
     }
     $(".intro-div").animate(
