@@ -52,8 +52,8 @@ body {
   padding-top: 8rem;
   text-align: center;
   opacity: 1;
-  animation: scroll-pulse 3s infinite;
-  -webkit-animation: scroll-pulse 3s infinite;
+  animation: scroll-pulse 3s ease-in-out infinite;
+  -webkit-animation: scroll-pulse 3s ease-in-out infinite;
 }
 
 .scroll-indicator {
@@ -65,24 +65,30 @@ body {
 @keyframes scroll-pulse {
   0% {
     opacity: 0.5;
+    transform: translate3d(0, 0, 0);
   }
   50% {
     opacity: 1;
+    transform: translate3d(0, 20px, 0);
   }
   100% {
     opacity: 0.5;
+    transform: translate3d(0, 0, 0);
   }
 }
 
 @-webkit-keyframes scroll-pulse {
   0% {
     opacity: 0.5;
+    transform: translate3d(0, 0, 0);
   }
   50% {
     opacity: 1;
+    transform: translate3d(0, 20px, 0);
   }
   100% {
     opacity: 0.5;
+    transform: translate3d(0, 0, 0);
   }
 }
 
