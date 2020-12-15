@@ -21,14 +21,33 @@ body {
   margin-left: 53.1rem;
 }
 
+.intro-background-img {
+  margin-top: 4rem;
+  height: 100vh;
+  width: auto;
+  background-image: url("../images/p_pic_cropped.jpg");
+  background-repeat: no-repeat;
+  background-position: 22rem -2rem;
+  background-size: 38rem;
+}
+
 .intro-div {
-  width: 65rem;
+  position: absolute;
+  background-color: rgba(249, 249, 249, 0.93);
+  width: 50rem;
   text-align: justify;
-  text-justify: inter-word;
-  padding-top: 10rem;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 48rem;
+  padding: 0.8rem 2.5rem;
   opacity: 1;
+  top: 30%;
+}
+
+.intro-background-div {
+  height: 100vh;
+  background-color: rgb(23, 23, 23);
+  animation: background-colour-change 5s infinite;
+  -webkit-animation: background-colour-change 5s infinite;
 }
 
 .light {
@@ -46,10 +65,10 @@ body {
 }
 
 .intro-paragraph {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
+
 .scroll-div {
-  padding-top: 8rem;
   text-align: center;
   opacity: 1;
   animation: scroll-pulse 3s ease-in-out infinite;
@@ -90,13 +109,6 @@ body {
     opacity: 0.5;
     transform: translate3d(0, 0, 0);
   }
-}
-
-.intro-background-div {
-  height: 100%;
-  background-color: rgb(23, 23, 23);
-  animation: background-colour-change 5s infinite;
-  -webkit-animation: background-colour-change 5s infinite;
 }
 
 .select-background-div {
