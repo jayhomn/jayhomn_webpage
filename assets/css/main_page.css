@@ -3,6 +3,123 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
+  background-color: rgb(45, 57, 64);
+}
+
+.line {
+  width: 1px;
+  height: 70rem;
+  position: absolute;
+  background-color: rgb(198, 113, 113);
+  transform: rotate(-25deg);
+  z-index: 0;
+}
+
+.line:nth-child(1) {
+  top: 10%;
+  left: 13%;
+}
+
+.line:nth-child(2) {
+  top: -5%;
+  left: 30%;
+}
+
+.line:nth-child(3) {
+  top: -2%;
+  left: 37%;
+}
+
+.line:nth-child(4) {
+  top: 0%;
+  left: 43%;
+}
+
+.line:nth-child(5) {
+  top: 1%;
+  left: 60%;
+}
+
+.line:nth-child(6) {
+  top: -2%;
+  left: 67%;
+}
+
+.line:nth-child(7) {
+  top: -2%;
+  left: 80%;
+}
+
+.line:nth-child(8) {
+  top: -3%;
+  left: 89%;
+}
+
+.line:nth-child(9) {
+  top: -4%;
+  left: 75%;
+}
+
+.background-wipe {
+  height: 38rem;
+  width: 80rem;
+  z-index: 2;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  background-color: rgb(45, 57, 64);
+  animation: swipe-right 1.4s ease-in-out 0.7s both;
+  -webkit-animation: swipe-right 1.4s ease-in-out 0.7s both;
+}
+
+.foreground-wipe {
+  height: 38rem;
+  width: 60rem;
+  z-index: 4;
+  position: absolute;
+  top: 20%;
+  left: 38.3%;
+  background-color: rgb(45, 57, 64);
+  animation: swipe-left 1.4s ease-in-out both;
+  -webkit-animation: swipe-left 1.4s ease-in-out both;
+}
+
+@keyframes swipe-left {
+  0% {
+    width: 60rem;
+  }
+  100% {
+    width: 0rem;
+  }
+}
+
+@-webkit-keyframes swipe-left {
+  0% {
+    width: 60rem;
+  }
+  100% {
+    width: 0rem;
+  }
+}
+
+@keyframes swipe-right {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 48.4%;
+    width: 0rem;
+  }
+}
+
+@-webkit-keyframes swipe-right {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 48.4%;
+    width: 0rem;
+  }
 }
 
 .app-bar {
@@ -10,6 +127,7 @@ body {
   flex-direction: row;
   justify-content: left;
   align-items: center;
+  color: rgba(255, 255, 255, 54);
 }
 
 .hamburger {
@@ -22,25 +140,28 @@ body {
 }
 
 .intro-background-img {
-  margin-top: 4rem;
+  position: relative;
   height: 100vh;
   width: auto;
   background-image: url("../images/p_pic_cropped.jpg");
   background-repeat: no-repeat;
-  background-position: 22rem -2rem;
+  background-position: 20rem 6rem;
   background-size: 38rem;
+  z-index: 1;
 }
 
 .intro-div {
-  position: absolute;
-  background-color: rgba(249, 249, 249, 0.93);
+  position: relative;
+  background-color: rgba(206, 162, 123, 0.93);
   width: 50rem;
   text-align: justify;
   margin-right: auto;
-  margin-left: 48rem;
-  padding: 0.8rem 2.5rem;
+  margin-left: 46rem;
+  padding: 0.4rem 2.5rem;
   opacity: 1;
-  top: 30%;
+  top: 23%;
+  color: white;
+  z-index: 3;
 }
 
 .intro-background-div {
@@ -65,10 +186,11 @@ body {
 }
 
 .intro-paragraph {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .scroll-div {
+  margin-top: 18rem;
   text-align: center;
   opacity: 1;
   animation: scroll-pulse 3s ease-in-out infinite;
@@ -76,9 +198,8 @@ body {
 }
 
 .scroll-indicator {
-  opacity: 1;
   font-size: 1.3rem;
-  color: rgba(0, 0, 0, 0.41);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 @keyframes scroll-pulse {
@@ -112,7 +233,7 @@ body {
 }
 
 .select-background-div {
-  height: 100%;
+  height: 100vh;
   background-color: hsl(0, 8%, 85%);
 }
 
@@ -140,28 +261,6 @@ body {
   }
 }
 
-@keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 40px, 0);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -170,10 +269,10 @@ body {
 }
 
 .animated-delay {
-  animation-delay: 0.4s;
+  animation-delay: 1.78s;
   animation-duration: 1s;
   animation-fill-mode: both;
-  -webkit-animation-delay: 0.5s;
+  -webkit-animation-delay: 1.78s;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both;
 }
@@ -186,6 +285,26 @@ body {
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .grow-container {
