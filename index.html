@@ -21,21 +21,22 @@
       src="https://kit.fontawesome.com/31364ebb5e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   </head>
 
   <body>
-    <div class="intro-background-div">
+    <div class="intro-background-img">
+      <div class="background-wipe"></div>
+      <div class="foreground-wipe"></div>
       <div class="app-bar">
         <i class="fas fa-bars hamburger"></i>
         <h1 class="light bar-signature">JAY HO</h1>
       </div>
       <div class="intro-div">
-        <h1 class="light intro-header1 animated animatedFadeInUp fadeInUp">
+        <h1 class="light intro-header1">
           HI, MY NAME IS <span class="regular">JAY HO</span>
         </h1>
-        <p
-          class="light intro-paragraph animated-delay animatedFadeInUp fadeInUp"
-        >
+        <p class="light intro-paragraph">
           I am a full time student, aspiring full-stack developer, homecook, and
           lifestyle enthusiast.
           <br />
@@ -45,23 +46,72 @@
           else that is on my mind that I want to tell you about!
         </p>
       </div>
-      <div class="selector-div grow-container">
-        <div class="grow coding-section light">CODING</div>
-        <div class="grow cooking-section light">COOKING</div>
-        <div class="grow lifestyle-section light">LIFESTYLE</div>
-      </div>
       <div class="scroll-div">
         <h1
           class="light scroll-indicator animated-delay animatedFadeInUp fadeInUp"
         >
           scroll down
         </h1>
-        <h1
-          class="light scroll-indicator animated-delay animatedFadeInUp fadeInUp"
-        >
-          v
-        </h1>
+        <i
+          class="fas fa-chevron-down scroll-indicator animated-delay animatedFadeInUp fadeInUp"
+        ></i>
       </div>
+      <div class="selector-div grow-container">
+        <div class="grow coding-section light">CODING</div>
+        <div class="grow cooking-section light">COOKING</div>
+        <div class="grow lifestyle-section light">LIFESTYLE</div>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div
+        id="1"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.02"
+        data-revert="true"
+      ></div>
+      <div
+        id="2"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.05"
+      ></div>
+      <div
+        id="3"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.02"
+      ></div>
+      <div
+        id="4"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.04"
+      ></div>
+      <div
+        id="5"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.03"
+        data-revert="true"
+      ></div>
+      <div
+        id="6"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.02"
+        data-revert="true"
+      ></div>
+      <div
+        id="7"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.01"
+      ></div>
+      <div
+        id="8"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.05"
+        data-revert="true"
+      ></div>
+      <div
+        id="9"
+        class="line animated animated-delay animatedFadeInUp fadeInUp"
+        data-speed="0.02"
+      ></div>
     </div>
   </body>
 </html>
