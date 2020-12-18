@@ -1,0 +1,207 @@
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.line {
+  position: relative;
+  height: 200rem;
+  width: 0.8rem;
+  left: 50%;
+  top: 40%;
+  background-color: rgb(36, 34, 35);
+}
+
+.app-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  background-color: rgb(36, 34, 35);
+  top: 0;
+  z-index: 1;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.bar-signature {
+  margin-left: auto;
+  margin-right: 38.6rem;
+}
+
+.section-indicator {
+  margin-right: 3.5rem;
+  position: relative;
+}
+
+.bar {
+  height: 0.125rem;
+  width: 15rem;
+  background-color: gray;
+}
+
+.circle-indicator {
+  position: absolute;
+  height: 0.7rem;
+  width: 0.7rem;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.circle-indicator:nth-child(2) {
+  top: -0.36rem;
+  left: 0rem;
+}
+
+.circle-indicator:nth-child(3) {
+  top: -0.36rem;
+  left: 3.75rem;
+}
+
+.circle-indicator:nth-child(4) {
+  top: -0.36rem;
+  left: 7.5rem;
+}
+
+.circle-indicator:nth-child(5) {
+  top: -0.36rem;
+  left: 11.25rem;
+}
+
+.circle-indicator:nth-child(6) {
+  top: -0.36rem;
+  left: 15rem;
+}
+
+.section-intro {
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5rem;
+  background-color: rgb(55, 55, 66);
+  padding-bottom: 4rem;
+}
+
+.section-p-pic {
+  width: 38rem;
+  height: 42rem;
+  object-fit: cover;
+}
+
+.section-selector {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 69rem;
+}
+
+.section-selector:hover .section-option:nth-child(1) {
+  animation: up-down 2s ease-in-out 0s infinite;
+  -webkit-animation: up-down 2s ease-in-out 0s infinite;
+}
+.section-selector:hover .section-option:nth-child(2) {
+  animation: up-down 2s ease-in-out 0.4s infinite;
+  -webkit-animation: up-down 2s ease-in-out 0.4s infinite;
+}
+
+.section-selector:hover .section-option:nth-child(3) {
+  animation: up-down 2s ease-in-out 0.8s infinite;
+  -webkit-animation: up-down 2s ease-in-out 0.8s infinite;
+}
+
+.section-selector:hover .section-option:nth-child(4) {
+  animation: up-down 2s ease-in-out 1.2s infinite;
+  -webkit-animation: up-down 2s ease-in-out 1.2s infinite;
+}
+
+.section-selector:hover .section-option:nth-child(5) {
+  animation: up-down 2s ease-in-out 1.6s infinite;
+  -webkit-animation: up-down 2s ease-in-out 1.6s infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 2rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 6rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.section-option {
+  background-color: gray;
+  text-align: center;
+}
+
+.section-option:nth-child(1) {
+  margin-top: 5rem;
+  height: 26rem;
+  width: 12rem;
+}
+
+.section-option:nth-child(2) {
+  height: 43rem;
+  width: 12rem;
+}
+
+.section-option:nth-child(3) {
+  margin-top: 8rem;
+  height: 26rem;
+  width: 12rem;
+}
+
+.section-option:nth-child(4) {
+  margin-top: 3rem;
+  height: 43rem;
+  width: 12rem;
+}
+
+.section-option:nth-child(5) {
+  margin-top: 5rem;
+  height: 26rem;
+  width: 12rem;
+}
+
+.section-option:nth-child(odd) h1 {
+  margin-top: 10rem;
+  font-size: 1.6rem;
+}
+
+.section-option:nth-child(even) h1 {
+  margin-top: 17rem;
+  font-size: 1.6rem;
+}
+
+.about {
+  height: 50rem;
+}
