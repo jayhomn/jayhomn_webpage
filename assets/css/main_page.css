@@ -234,7 +234,7 @@ body {
 
 .select-background-div {
   height: 100vh;
-  background-color: hsl(0, 8%, 85%);
+  background-color: rgb(45, 57, 64);
 }
 
 @keyframes background-colour-change {

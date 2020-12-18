@@ -2,6 +2,8 @@ $(document).ready(function () {
   var scroll = 0;
   var inAnimation = false;
   $(".grow-container").hide();
+
+  // Handle Scroll Transition
   window.addEventListener("wheel", function (event) {
     if (!inAnimation) {
       if (event.deltaY < 0) {
@@ -10,13 +12,12 @@ $(document).ready(function () {
         if (scroll <= 0) {
           inAnimation = true;
           scroll = 0;
-          $(".intro-div").show();
-          $(".scroll-div").show();
+
           $(".grow-container").hide();
           $(".grow-container").css("opacity", "0");
           $(".select-background-div").animate(
             {
-              backgroundColor: "white",
+              backgroundColor: " rgba(0, 0, 0,0)",
             },
             500,
             function () {
@@ -24,16 +25,23 @@ $(document).ready(function () {
               $(".select-background-div")
                 .removeClass("select-background-div")
                 .addClass("intro-background-img");
-            }
-          );
-          $(".app-bar").animate(
-            {
-              color: "black",
-            },
-            600,
-            function () {
-              // Animation complete.
-              inAnimation = false;
+              $(".background-wipe").show();
+              $(".foreground-wipe").show();
+              $(".intro-div").show();
+              $(".scroll-div").show();
+              $(".intro-div").animate({ opacity: 1 }, 200, function () {});
+              $("#wrapper")
+                .delay(1700)
+                .animate(
+                  {
+                    opacity: 1,
+                  },
+                  700,
+                  function () {
+                    // Animation Complete
+                    inAnimation = false;
+                  }
+                );
             }
           );
         }
@@ -47,13 +55,27 @@ $(document).ready(function () {
           $(".intro-background-img")
             .removeClass("intro-background-img")
             .addClass("select-background-div");
+
+          $(".intro-div").animate({ opacity: 0 }, 500, function () {});
+          $("#wrapper").animate(
+            {
+              opacity: 0,
+            },
+            100,
+            function () {
+              // Animation Complete
+            }
+          );
+
           $(".select-background-div").animate(
             {
               backgroundColor: "rgb( 23, 23, 23 )",
             },
-            500,
+            200,
             function () {
               // Animation complete.
+              $(".background-wipe").hide();
+              $(".foreground-wipe").hide();
               $(".scroll-div").hide();
               $(".intro-div").hide();
               $(".grow-container").show();
@@ -64,24 +86,17 @@ $(document).ready(function () {
                 1000,
                 function () {
                   // Animation complete.
+                  inAnimation = false;
                 }
               );
-            }
-          );
-          $(".app-bar").animate(
-            {
-              color: "rgba( 255, 255, 255,54 )",
-            },
-            600,
-            function () {
-              // Animation complete.
-              inAnimation = false;
             }
           );
         }
       }
     }
   });
+
+  // Handle background parallax
   $("html").mousemove(function (e) {
     var wx = $(window).width();
     var wy = $(window).height();
