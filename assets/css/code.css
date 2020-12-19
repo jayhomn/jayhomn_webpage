@@ -9,10 +9,10 @@ body {
 
 .line {
   position: relative;
-  height: 200rem;
-  width: 0.8rem;
+  height: 200vh;
+  width: 0.4vw;
   left: 50%;
-  top: 40%;
+  top: -80vh;
   background-color: rgb(36, 34, 35);
 }
 
@@ -33,16 +33,16 @@ body {
 
 .hamburger {
   font-size: 1.5rem;
-  margin-left: 2rem;
+  margin-left: 2vw;
 }
 
 .bar-signature {
   margin-left: auto;
-  margin-right: 38.6rem;
+  margin-right: 23.8vw;
 }
 
 .section-indicator {
-  margin-right: 3.5rem;
+  margin-right: 5vw;
   position: relative;
 }
 
