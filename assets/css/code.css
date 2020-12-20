@@ -8,11 +8,11 @@ body {
 }
 
 .line {
-  position: relative;
-  height: 200vh;
+  position: absolute;
+  height: 500vh;
   width: 0.4vw;
   left: 50%;
-  top: -70vh;
+  top: 124%;
   background-color: rgb(36, 34, 35);
 }
 
@@ -497,3 +497,19 @@ body {
   font-size: 1.3rem;
   text-align: justify;
 }
+
+.work {
+  height: 80rem;
+  margin-top: 5rem;
+}
+
+.resume-btn {
+  background-color: #e56b70;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  border-radius: 50px;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 20vw;
