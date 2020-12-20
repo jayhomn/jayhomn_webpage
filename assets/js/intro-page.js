@@ -1,6 +1,7 @@
 $(document).ready(function () {
   var scroll = 0;
   var inAnimation = false;
+  var upAnimate = true;
   $(".grow-container").hide();
 
   // Handle Scroll Transition
@@ -8,8 +9,9 @@ $(document).ready(function () {
     if (!inAnimation) {
       if (event.deltaY < 0) {
         // scroll up
-        scroll--;
-        if (scroll <= 0) {
+        scroll = 0;
+        if (scroll <= 0 && !upAnimate) {
+          upAnimate = true;
           inAnimation = true;
           scroll = 0;
 
@@ -47,8 +49,9 @@ $(document).ready(function () {
         }
       } else if (event.deltaY > 0) {
         // scroll down
-        scroll++;
-        if (scroll >= 1) {
+        scroll = 1;
+        if (scroll >= 1 && upAnimate) {
+          upAnimate = false;
           inAnimation = true;
           scroll = 1;
 
