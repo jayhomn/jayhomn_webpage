@@ -1,0 +1,196 @@
+.timeline {
+  height: 0.2vh;
+  width: 240vw;
+  background-color: #808080;
+  margin-top: -4vh;
+  margin-left: 2vw;
+  position: absolute;
+  top: 50%;
+  left: 1.7%;
+}
+
+.section-work {
+  position: relative;
+  width: 150vw;
+  overflow-x: auto;
+  height: 100%;
+}
+
+.work-header {
+  font-size: 5rem;
+  position: absolute;
+  left: 3%;
+}
+
+.work-timeline {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-column {
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  text-align: justify;
+}
+
+.column-header {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-logo {
+  height: 5.5vh;
+  margin-left: 8vw;
+}
+
+.description {
+  font-size: 1.02vw;
+}
+
+.experience-header {
+  font-size: 2.2vw;
+}
+
+.one45-section {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+}
+
+.ta-section {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
+.underline-work {
+  height: 0.2vh;
+  width: 10vw;
+  background-color: #808080;
+  margin-top: -4vh;
+  margin-left: 2vw;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.time-indicator {
+  width: 0.1vw;
+  height: 2vh;
+  background-color: #808080;
+}
+
+.first-exp {
+  position: absolute;
+  top: 44%;
+  left: 40%;
+}
+
+.second-exp {
+  position: absolute;
+  top: 46%;
+  left: 110%;
+}
+
+.first-time-exp {
+  position: absolute;
+  top: 40%;
+  left: 38.5%;
+}
+
+.second-time-exp {
+  position: absolute;
+  top: 50%;
+  left: 108.5%;
+  width: 10vw;
+}
+
+.php {
+  font-size: 9vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 62%;
+  left: 15%;
+}
+.js {
+  font-size: 6vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 10%;
+  left: 23%;
+}
+.html {
+  font-size: 9vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 45%;
+  left: 35%;
+}
+.sql {
+  font-size: 4vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 5%;
+  left: 18%;
+}
+.css {
+  font-size: 9vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 15%;
+  left: 65%;
+}
+.jq {
+  font-size: 3vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 38%;
+  left: 60%;
+}
+.r {
+  font-size: 5vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 67%;
+  left: 47%;
+}
+.java {
+  font-size: 8vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 62%;
+  left: 70%;
+}
+.node {
+  font-size: 4vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 6%;
+  left: 54%;
+}
+.exp {
+  font-size: 2vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 10%;
+  left: 82%;
+}
+.ccc {
+  font-size: 9vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 15%;
+  left: 88%;
+}
+
+.mdb {
+  font-size: 3vw;
+  color: rgba(0, 0, 0, 0.06);
+  position: absolute;
+  top: 78%;
+  left: 84%;
+}
