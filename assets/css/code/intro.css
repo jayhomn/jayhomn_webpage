@@ -143,6 +143,12 @@ body {
   background-color: #0f0e0e;
   padding-top: 180px;
 }
+.work-sub-section {
+  margin-left: 38rem;
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: row;
+}
 
 .work-title {
   color: #dbdbdb;
@@ -152,9 +158,167 @@ body {
 }
 
 .work-line {
-  margin-top: 160px;
-  margin-left: 1550px;
   width: 1px;
-  height: 80rem;
+  height: 55rem;
   background-color: #808080;
+  margin-left: 2rem;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-entry {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-bottom: 11rem;
+}
+
+.work-entry-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.work-entry-title-job {
+  color: #8c884e;
+  font-size: 1.5rem;
+  margin-left: 5rem;
+}
+
+.skill {
+  text-align: center;
+  align-self: baseline;
+  color: white;
+  background-color: #8c884e;
+  width: 2.5rem;
+}
+
+.work-entry-company {
+  color: #e1e1e1;
+  text-align: right;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.work-entry-company-one45 {
+  font-size: 4.71rem;
+}
+
+.work-entry-company-ubc {
+  font-size: 1.85rem;
+}
+
+.work-entry-descript {
+  text-align: justify;
+  color: #7d7878;
+}
+
+.work-date {
+  color: #9d9696;
+  margin-bottom: 27.25rem;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.project {
+  background-color: #fff5e8;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+}
+
+.project-entry {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-entry-date {
+  color: #9d9696;
+  margin-right: 4rem;
+}
+
+.project-info-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.project-desc {
+  text-align: justify;
+}
+
+.project-skills {
+  text-align: center;
+  align-self: baseline;
+  color: white;
+  background-color: #917272;
+  width: 2.5rem;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.project-pic {
+  height: 15rem;
+  background-color: rgb(158, 156, 151);
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+.project-name-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.project-entry-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8rem;
+}
+
+.project-name {
+  color: #9d9696;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+}
+
+.project-line {
+  width: 2px;
+  height: 100%;
+  background-color: #808080;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 35rem;
+}
+
+.project-entry-dressi {
+  margin-left: 30rem;
+}
+
+.project-entry-shopple {
+  margin-left: 30rem;
+}
+
+.contact {
+  padding-top: 180px;
+  padding-bottom: 50px;
 }
