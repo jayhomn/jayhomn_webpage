@@ -1,0 +1,160 @@
+html,
+body {
+  margin: 0;
+}
+
+.line {
+  height: 1px;
+  width: 13rem;
+  background-color: #808080;
+}
+
+.intro-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 780px;
+  height: 800px;
+  overflow: hidden;
+}
+
+.intro-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.left-options {
+  position: absolute;
+  top: 40%;
+  left: 130px;
+  align-items: flex-start;
+}
+
+.right-options {
+  position: absolute;
+  top: 40%;
+  right: 130px;
+  align-items: flex-end;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 4rem;
+}
+
+.white {
+  height: 140px;
+  width: 400px;
+  background-color: white;
+}
+
+.white-one {
+  position: absolute;
+  top: 13%;
+  left: 60.4%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.white-two {
+  position: absolute;
+  top: 87%;
+  left: 39.6%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.intro-word-design {
+  color: white;
+  font-size: 7.5rem;
+  letter-spacing: 17.7px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.sections {
+  position: absolute;
+  top: 125%;
+}
+
+.about {
+  margin: 90px 0;
+}
+
+.about-title {
+  font-size: 4rem;
+  margin-left: 190px;
+}
+
+.about-grid {
+  padding: 0 190px;
+  display: grid;
+  grid-template-columns: 650px auto;
+  grid-template-rows: 800px;
+  column-gap: 140px;
+}
+
+.about-column-one {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.about-line {
+  height: 1px;
+  width: auto;
+  background-color: #808080;
+  margin: 50px 0;
+}
+
+.about-info {
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+.about-column-two {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.about-column-two img {
+  height: 1200px;
+  transform: translate(-35%, -32%);
+}
+
+.work {
+  background-color: #0f0e0e;
+  padding-top: 180px;
+}
+
+.work-title {
+  color: #dbdbdb;
+  text-align: right;
+  font-size: 4rem;
+  margin-right: 190px;
+}
+
+.work-line {
+  margin-top: 160px;
+  margin-left: 1550px;
+  width: 1px;
+  height: 80rem;
+  background-color: #808080;
+}
