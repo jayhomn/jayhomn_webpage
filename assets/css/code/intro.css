@@ -31,12 +31,12 @@ body {
 }
 
 .left-options {
-  left: 7rem;
+  left: 6vw;
   align-items: flex-start;
 }
 
 .right-options {
-  right: 7rem;
+  right: 6vw;
   align-items: flex-end;
 }
 
@@ -53,7 +53,6 @@ body {
 
 .white {
   position: absolute;
-  transform: translate(-50%, -50%);
   height: 13vh;
   width: 20vw;
   background-color: white;
@@ -61,13 +60,13 @@ body {
 }
 
 .white-one {
-  top: 13%;
-  left: 61%;
+  top: 7%;
+  right: 29%;
 }
 
 .white-two {
-  top: 87%;
-  right: 41%;
+  top: 80vh;
+  left: 29%;
 }
 
 .intro-word-design {
