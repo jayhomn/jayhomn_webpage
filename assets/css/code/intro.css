@@ -319,6 +319,60 @@ body {
 }
 
 .contact {
-  padding-top: 180px;
-  padding-bottom: 50px;
+  padding-top: 25rem;
+  padding-bottom: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+}
+
+.contact-brown-block {
+  background-color: #917272;
+  width: 2.5rem;
+  height: 4.5rem;
+}
+
+.contact-line-one {
+  background-color: #808080;
+  height: 1px;
+  width: 25rem;
+  margin-right: 25rem;
+}
+
+.contact-line-two {
+  background-color: #808080;
+  height: 1px;
+  width: 25rem;
+  margin-left: 25rem;
+}
+
+.contact-title-and-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-title {
+  font-size: 5rem;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2.3rem;
+  width: 55rem;
+
+  margin-top: 4rem;
 }
