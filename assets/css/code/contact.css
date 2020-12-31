@@ -1,0 +1,52 @@
+.section-contact {
+  position: relative;
+  height: 52%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.contact-grey-one {
+  background-color: #c8c8c8;
+  height: 21vh;
+  width: 2vw;
+}
+
+.contact-info {
+  color: #9d9696;
+  font-size: 1.7vw;
+  margin-right: 12vw;
+}
+
+.contact-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20vw;
+}
+
+.contact-grey-two {
+  background-color: #c8c8c8;
+  height: 13vh;
+  width: 10vw;
+}
+
+.contact-line {
+  background-color: #808080;
+  height: 0.1vh;
+  width: 10vw;
+}
+
+.contact-title {
+  font-size: 4vw;
+  width: 1vw;
+}
+
+.contact-dark-grey {
+  background-color: #9d9696;
+  height: 13vh;
+  width: 25vw;
+}

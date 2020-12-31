@@ -1,0 +1,87 @@
+.section-project {
+  position: relative;
+  overflow-x: auto;
+  height: 100%;
+}
+
+.project-header {
+  font-size: 5rem;
+  position: absolute;
+  top: 25%;
+  left: 3%;
+}
+
+.underline-project {
+  height: 0.2vh;
+  width: 10vw;
+  background-color: #808080;
+  margin-top: -4vh;
+  margin-left: 2vw;
+  position: absolute;
+  top: 47%;
+  left: 1.4%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  margin-top: 8vh;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  padding-right: 14vw;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  position: relative;
+  top: 0%;
+}
+
+.project-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  width: 18vw;
+  text-align: justify;
+  margin-right: -3.9vw;
+}
+
+.project-pic {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+.project-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  position: absolute;
+  top: 3.9%;
+  left: 150%;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+}
+
+.project-date {
+  color: #9d9696;
+  margin-bottom: 1vh;
+}
+
+.name {
+  color: #9d9696;
+  font-size: 4vh;
+}
+
+.project-line {
+  width: 10vh;
+  height: 0.09px;
+  margin-left: 2vh;
+  background-color: #808080;
+}
