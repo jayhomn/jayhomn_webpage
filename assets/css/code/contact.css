@@ -1,52 +1,58 @@
-.section-contact {
-  position: relative;
-  height: 52%;
-  width: 100%;
+.contact {
+  padding-top: 25rem;
+  padding-bottom: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.contact-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+}
+
+.contact-brown-block {
+  background-color: #917272;
+  width: 2.5rem;
+  height: 4.5rem;
+}
+
+.contact-line-one {
+  background-color: #808080;
+  height: 1px;
+  width: 25rem;
+  margin-right: 25rem;
+}
+
+.contact-line-two {
+  background-color: #808080;
+  height: 1px;
+  width: 25rem;
+  margin-left: 25rem;
+}
+
+.contact-title-and-blocks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
-}
-
-.contact-grey-one {
-  background-color: #c8c8c8;
-  height: 21vh;
-  width: 2vw;
-}
-
-.contact-info {
-  color: #9d9696;
-  font-size: 1.7vw;
-  margin-right: 12vw;
-}
-
-.contact-title-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 20vw;
-}
-
-.contact-grey-two {
-  background-color: #c8c8c8;
-  height: 13vh;
-  width: 10vw;
-}
-
-.contact-line {
-  background-color: #808080;
-  height: 0.1vh;
-  width: 10vw;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-title {
-  font-size: 4vw;
-  width: 1vw;
+  font-size: 5rem;
 }
 
-.contact-dark-grey {
-  background-color: #9d9696;
-  height: 13vh;
-  width: 25vw;
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2.3rem;
+  width: 55rem;
+
+  margin-top: 4rem;
 }

@@ -1,87 +1,90 @@
-.section-project {
-  position: relative;
-  overflow-x: auto;
-  height: 100%;
-}
-
-.project-header {
-  font-size: 5rem;
-  position: absolute;
-  top: 25%;
-  left: 3%;
-}
-
-.underline-project {
-  height: 0.2vh;
-  width: 10vw;
-  background-color: #808080;
-  margin-top: -4vh;
-  margin-left: 2vw;
-  position: absolute;
-  top: 47%;
-  left: 1.4%;
-}
-
-.project-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
-  margin-top: 8vh;
-  margin-left: 35vw;
-  margin-right: 35vw;
-  padding-right: 14vw;
-}
-
 .project {
+  background-color: #fff5e8;
+  padding-top: 180px;
+  padding-bottom: 50px;
+}
+
+.project-info {
   display: flex;
-  flex-direction: row;
-  height: fit-content;
-  position: relative;
-  top: 0%;
+  flex-direction: column;
+  width: 22rem;
 }
 
 .project-entry {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: fit-content;
-  width: 18vw;
-  text-align: justify;
-  margin-right: -3.9vw;
 }
 
-.project-pic {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2vh;
+.project-entry-date {
+  color: #9d9696;
+  margin-right: 4rem;
 }
 
-.project-name {
+.project-info-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
-  position: absolute;
-  top: 3.9%;
-  left: 150%;
-  transform-origin: 0 0;
-  transform: rotate(90deg);
+  align-items: flex-end;
 }
 
-.project-date {
-  color: #9d9696;
-  margin-bottom: 1vh;
+.project-desc {
+  text-align: justify;
 }
 
-.name {
+.project-skills {
+  text-align: center;
+  align-self: baseline;
+  color: white;
+  background-color: #917272;
+  width: 2.5rem;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.project-pic {
+  height: 15rem;
+  background-color: rgb(158, 156, 151);
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+.project-name-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.project-entry-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8rem;
+}
+
+.project-name {
   color: #9d9696;
-  font-size: 4vh;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
 }
 
 .project-line {
-  width: 10vh;
-  height: 0.09px;
-  margin-left: 2vh;
+  width: 2px;
+  height: 100%;
   background-color: #808080;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 35rem;
+}
+
+.project-entry-dressi {
+  margin-left: 30rem;
+}
+
+.project-entry-shopple {
+  margin-left: 30rem;
 }
