@@ -5,7 +5,7 @@ body {
 
 .line {
   height: 1px;
-  width: 13rem;
+  width: 11vw;
   background-color: #808080;
 }
 
@@ -15,8 +15,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 49rem;
-  height: 90rem;
+  width: 41vw;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -25,6 +25,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  width: 200%;
+  height: auto;
 }
 
 .left-options {
@@ -45,32 +48,32 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  font-size: 4rem;
+  font-size: 3.5vw;
 }
 
 .white {
   position: absolute;
   transform: translate(-50%, -50%);
-  height: 8rem;
-  width: 24.5rem;
+  height: 13vh;
+  width: 20vw;
   background-color: white;
   z-index: 1;
 }
 
 .white-one {
-  top: 8rem;
-  left: 60.4%;
+  top: 13vh;
+  left: 61vw;
 }
 
 .white-two {
-  top: 87%;
-  left: 39.6%;
+  top: 87vh;
+  right: 41vw;
 }
 
 .intro-word-design {
   color: white;
-  font-size: 7.5rem;
-  letter-spacing: 17.7px;
+  font-size: 6.2vw;
+  letter-spacing: 1.2vw;
 
   position: absolute;
   top: 50%;
