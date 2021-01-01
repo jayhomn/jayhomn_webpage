@@ -1,11 +1,11 @@
 .work {
   background-color: #0f0e0e;
-  padding-top: 180px;
+  padding-top: 17vh;
   width: 100vw;
 }
 .work-sub-section {
-  margin-left: 38rem;
-  margin-top: 7rem;
+  margin-left: 32vw;
+  margin-top: 15vh;
   display: flex;
   flex-direction: row;
 }
@@ -13,15 +13,15 @@
 .work-title {
   color: #dbdbdb;
   text-align: right;
-  font-size: 4rem;
-  margin-right: 190px;
+  font-size: 3.5vw;
+  margin-right: 10vw;
 }
 
 .work-line {
   width: 1px;
-  height: 55rem;
+  height: 92vh;
   background-color: #808080;
-  margin-left: 2rem;
+  margin-left: 1.7vw;
 }
 
 .work-container {
@@ -32,8 +32,8 @@
 .work-entry {
   display: flex;
   flex-direction: column;
-  width: 40rem;
-  margin-bottom: 11rem;
+  width: 33.5vw;
+  margin-bottom: 23vh;
 }
 
 .work-entry-title {
@@ -44,8 +44,8 @@
 
 .work-entry-title-job {
   color: #8c884e;
-  font-size: 1.5rem;
-  margin-left: 5rem;
+  font-size: 1.2vw;
+  margin-left: 4vw;
 }
 
 .skill {
@@ -53,36 +53,38 @@
   align-self: baseline;
   color: white;
   background-color: #8c884e;
-  width: 2.5rem;
+  width: 2.3vw;
+  font-size: 0.9vw;
 }
 
 .work-entry-company {
   color: #e1e1e1;
   text-align: right;
-  margin-top: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin: 1.2vh 0;
 }
 
 .work-entry-company-one45 {
-  font-size: 4.71rem;
+  font-size: 3.94vw;
 }
 
 .work-entry-company-ubc {
-  font-size: 1.85rem;
+  font-size: 1.55vw;
 }
 
 .work-entry-descript {
   text-align: justify;
   color: #7d7878;
+  font-size: 0.9vw;
 }
 
 .work-date {
   color: #9d9696;
-  margin-bottom: 27.25rem;
+  margin-bottom: 53.3vh;
 }
 
 .date-container {
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
+  margin-left: 1.7vw;
+  font-size: 0.9vw;
 }

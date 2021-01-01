@@ -1,13 +1,13 @@
 .project {
   background-color: #fff5e8;
-  padding-top: 180px;
-  padding-bottom: 50px;
+  padding-top: 17vh;
+  padding-bottom: 14vh;
 }
 
 .project-info {
   display: flex;
   flex-direction: column;
-  width: 22rem;
+  width: 18vw;
 }
 
 .project-entry {
@@ -17,7 +17,8 @@
 
 .project-entry-date {
   color: #9d9696;
-  margin-right: 4rem;
+  margin-right: 3vw;
+  font-size: 0.9vw;
 }
 
 .project-info-title {
@@ -29,6 +30,7 @@
 
 .project-desc {
   text-align: justify;
+  font-size: 0.9vw;
 }
 
 .project-skills {
@@ -36,36 +38,35 @@
   align-self: baseline;
   color: white;
   background-color: #917272;
-  width: 2.5rem;
-  padding-left: 3px;
-  padding-right: 3px;
+  width: 2vw;
+  padding: 0 0.25vw;
+  font-size: 0.9vw;
 }
 
 .project-pic {
-  height: 15rem;
+  height: 22vh;
   background-color: rgb(158, 156, 151);
-  margin-top: 1rem;
-  margin-bottom: 1.7rem;
+  margin: 1.4vh 0;
 }
 
 .project-name-line {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 1.8vw;
 }
 
 .project-entry-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 8rem;
+  margin-bottom: 15vh;
 }
 
 .project-name {
   color: #9d9696;
-  font-size: 2.5rem;
-  margin-bottom: 1.2rem;
-  margin-top: 2rem;
+  font-size: 2vw;
+  margin-bottom: 1.4vh;
+  margin-top: 3.3vh;
 }
 
 .project-line {
@@ -77,14 +78,14 @@
 .project-container {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-left: 35rem;
+  margin-top: 9vh;
+  margin-left: 24vw;
 }
 
 .project-entry-dressi {
-  margin-left: 30rem;
+  margin-left: 34vw;
 }
 
 .project-entry-shopple {
-  margin-left: 30rem;
+  margin-left: 34vw;
 }
