@@ -1,18 +1,18 @@
 .about {
-  margin: 90px 0;
+  margin: 20vh 0;
 }
 
 .about-title {
-  font-size: 4rem;
-  margin-left: 190px;
+  font-size: 3.5vw;
+  margin-left: 10vw;
 }
 
 .about-grid {
-  padding: 0 190px;
+  padding: 0 10vw;
   display: grid;
-  grid-template-columns: 650px auto;
-  grid-template-rows: 800px;
-  column-gap: 140px;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: 90vh;
+  column-gap: 7vw;
 }
 
 .about-column-one {
@@ -26,11 +26,11 @@
   height: 1px;
   width: auto;
   background-color: #808080;
-  margin: 50px 0;
+  margin: 6vh 0;
 }
 
 .about-info {
-  font-size: 1.7rem;
+  font-size: 1.4vw;
   text-align: justify;
 }
 
@@ -41,10 +41,10 @@
   grid-row-end: 2;
 
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 6vh;
 }
 
 .about-column-two img {
-  height: 1200px;
+  height: 125vh;
   transform: translate(-35%, -32%);
 }
