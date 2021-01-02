@@ -10,7 +10,7 @@
 .about-grid {
   padding: 0 10vw;
   display: grid;
-  grid-template-columns: 35vw 35vw;
+  grid-template-columns: 36vw 36vw;
   grid-template-rows: 90vh;
   column-gap: 7vw;
 }
@@ -32,6 +32,7 @@
 .about-info {
   font-size: 1.4vw;
   text-align: justify;
+  line-height: 35px;
 }
 
 .about-column-two {

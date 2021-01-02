@@ -17,7 +17,7 @@
 
 .project-entry-date {
   color: #9d9696;
-  margin-right: 3vw;
+  margin-right: 1vw;
   font-size: 0.9vw;
 }
 
@@ -38,8 +38,8 @@
   align-self: baseline;
   color: white;
   background-color: #917272;
-  width: 2vw;
-  padding: 0 0.25vw;
+  width: 2.5vw;
+  padding: 0 0.27vw;
   font-size: 0.9vw;
 }
 
