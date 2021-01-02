@@ -71,8 +71,3 @@ body {
   letter-spacing: 1.2vw;
   z-index: 1;
 }
-
-.sections {
-  position: absolute;
-  top: 110%;
-}

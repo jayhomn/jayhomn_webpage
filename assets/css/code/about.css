@@ -43,9 +43,8 @@
 
   overflow: hidden;
   margin-top: 6vh;
-}
 
-.about-column-two img {
-  height: 125vh;
-  transform: translate(-35%, -32%);
+  background-image: url("../../images/p_pic.jpg");
+  background-size: cover;
+  background-position: center top;
 }
