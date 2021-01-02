@@ -4,56 +4,53 @@ body {
   overflow-x: hidden;
 }
 
+.intro {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .line {
   height: 1px;
   width: 11vw;
   background-color: #808080;
 }
 
-.intro-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.intro-banner-design {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-  width: 41vw;
-  height: 90vh;
-  overflow: hidden;
-}
-
-.intro-image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 200%;
+  width: 40vw;
   height: auto;
+  margin-right: -2vw;
+
+  background-image: url("../../images/p_pic.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .left-options {
-  left: 6vw;
+  margin-left: 6vw;
   align-items: flex-start;
 }
 
 .right-options {
-  right: 6vw;
+  margin-right: 6vw;
   align-items: flex-end;
 }
 
 .options {
-  position: absolute;
-  top: 40%;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   font-size: 3.5vw;
 }
 
 .white {
-  position: absolute;
   height: 13vh;
   width: 20vw;
   background-color: white;
@@ -61,28 +58,21 @@ body {
 }
 
 .white-one {
-  top: 7%;
-  right: 29%;
+  margin-left: 21vw;
 }
 
 .white-two {
-  top: 80vh;
-  left: 29%;
+  margin-right: 21vw;
 }
 
 .intro-word-design {
   color: white;
   font-size: 6.2vw;
   letter-spacing: 1.2vw;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .sections {
   position: absolute;
-  top: 125%;
+  top: 110%;
 }
