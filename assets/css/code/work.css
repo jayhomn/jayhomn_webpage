@@ -6,9 +6,10 @@
 .work-sub-section {
   margin-left: 32vw;
   margin-top: 15vh;
+  padding-bottom: 18vh;
 
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 34vw 4vw auto;
   grid-template-rows: auto auto;
 }
 

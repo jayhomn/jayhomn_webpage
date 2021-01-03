@@ -2,10 +2,92 @@ html,
 body {
   margin: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 35%;
+  left: 2.3%;
+
+  font-size: 0.9vw;
+}
+
+.side-nav-line {
+  width: 1px;
+  height: 5vh;
+  margin: 7px 0;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+}
+
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+/* mouse over link */
+a:hover {
+  color: #917272;
+}
+
+/* selected link */
+a:active {
+  color: rgb(0, 0, 0);
+}
+
+.wipe-reveal-box-one {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  transform-origin: bottom;
+
+  animation: wipe 0.8s ease-in-out both;
+}
+
+.wipe-reveal-box-two {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  z-index: 2;
+  transform-origin: top;
+
+  animation: wipe 1s ease-in-out both;
+}
+
+@keyframes wipe {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0.15);
+  }
 }
 
 .intro {
-  padding-top: 10vh;
+  padding-top: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,6 +101,7 @@ body {
 }
 
 .intro-banner-design {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -30,7 +113,7 @@ body {
 
   background-image: url("../../images/p_pic.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 
 .left-options {
@@ -48,6 +131,20 @@ body {
   flex-direction: column;
 
   font-size: 3.5vw;
+  opacity: 0;
+  transform: translateY(10%);
+
+  animation: fade-up 0.8s ease-in-out 0.8s both;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 .white {
@@ -58,11 +155,11 @@ body {
 }
 
 .white-one {
-  margin-left: 21vw;
+  margin-left: 20vw;
 }
 
 .white-two {
-  margin-right: 21vw;
+  margin-right: 20vw;
 }
 
 .intro-word-design {

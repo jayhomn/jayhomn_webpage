@@ -1,17 +1,19 @@
 .about {
-  margin: 20vh 0;
+  padding: 20vh 0;
+  width: 100vw;
 }
 
 .about-title {
   font-size: 3.5vw;
   margin-left: 10vw;
+  margin-bottom: -5vh;
 }
 
 .about-grid {
   padding: 0 10vw;
   display: grid;
   grid-template-columns: 36vw 36vw;
-  grid-template-rows: 90vh;
+  grid-template-rows: auto;
   column-gap: 7vw;
 }
 
@@ -30,9 +32,8 @@
 }
 
 .about-info {
-  font-size: 1.4vw;
+  font-size: 1.3vw;
   text-align: justify;
-  line-height: 35px;
 }
 
 .about-column-two {
