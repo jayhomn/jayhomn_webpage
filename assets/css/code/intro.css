@@ -5,6 +5,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.section-reveal {
+  opacity: 0;
+}
+
 .side-nav {
   display: flex;
   flex-direction: column;
@@ -13,7 +17,10 @@ body {
 
   position: fixed;
   top: 35%;
-  left: 2.3%;
+  left: 2.5%;
+  z-index: 3;
+
+  opacity: 0;
 
   font-size: 0.9vw;
 }
@@ -41,7 +48,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #917272;
+  color: #acacac;
 }
 
 /* selected link */
@@ -87,7 +94,7 @@ a:active {
 }
 
 .intro {
-  padding-top: 5vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
