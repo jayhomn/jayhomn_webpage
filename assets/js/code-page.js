@@ -50,6 +50,30 @@ $(document).ready(function () {
   var lastX = 0;
   var lastY = 0;
 
+  var hovering = false;
+
+  const initHovers = () => {
+    const linkItems = $("a");
+    linkItems.each(function () {
+      $(this).hover(
+        function (e) {
+          outerCursor.hoverFlow(
+            e.type,
+            { width: "55px", height: "55px", left: "-27.8px", top: "-27.8px" },
+            "fast"
+          );
+        },
+        function (e) {
+          outerCursor.hoverFlow(
+            e.type,
+            { width: "35px", height: "35px", left: "-18.8px", top: "-18.8px" },
+            "fast"
+          );
+        }
+      );
+    });
+  };
+
   const initCursor = () => {
     // transform the innerCursor to the current mouse position
     // use requestAnimationFrame() for smooth performance
@@ -80,28 +104,11 @@ $(document).ready(function () {
 
   initCursor();
   initRing();
-
+  initHovers();
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
     var cursor_of_window = $(window).scrollTop() + $(window).height() / 3;
     var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-    if (
-      cursor_of_window <=
-      $("#intro").position().top + $("#intro").outerHeight()
-    ) {
-      if ($(".side-nav").css("opacity") != 0) {
-        $(".side-nav")
-          .filter(":not(:animated)")
-          .animate({ opacity: "0" }, 200, function () {
-            console.log("fnished");
-          });
-      }
-    } else {
-      if ($(".side-nav").css("opacity") != 1) {
-        $(".side-nav").filter(":not(:animated)").animate({ opacity: "1" }, 800);
-      }
-    }
 
     if (
       cursor_of_window >=
