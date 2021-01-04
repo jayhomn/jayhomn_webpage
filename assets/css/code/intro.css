@@ -1,8 +1,35 @@
 html,
 body {
+  cursor: none;
   margin: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+.cursor-dot {
+  position: fixed;
+  pointer-events: none;
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: black;
+}
+
+.cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  width: 35px;
+  height: 35px;
+  left: -18.8px;
+  top: -18.8px;
+  border-radius: 50%;
+  z-index: 12000;
+  border-style: solid;
+  border-color: rgb(151, 151, 151);
+  border-width: 1px;
 }
 
 .section-reveal {
@@ -33,6 +60,7 @@ body {
 }
 
 a {
+  cursor: none;
   text-decoration: none;
   transition: color 0.4s ease-in-out;
 }

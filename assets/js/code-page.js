@@ -1,5 +1,3 @@
-var sideNavInAni = false;
-
 function checkIfInView(element, windowBottom) {
   var bottom_of_object = element.position().top + element.outerHeight() / 4;
   if (windowBottom > bottom_of_object) {
@@ -39,13 +37,53 @@ function checkIfInView(element, windowBottom) {
     }
   }
 }
+const lerp = (a, b, n) => {
+  return (1 - n) * a + n * b;
+};
 
 $(document).ready(function () {
+  var innerCursor = $(".cursor-dot");
+  var outerCursor = $(".cursor-ring");
+
+  var clientX = -100;
+  var clientY = -100;
+  var lastX = 0;
+  var lastY = 0;
+
+  const initCursor = () => {
+    // transform the innerCursor to the current mouse position
+    // use requestAnimationFrame() for smooth performance
+    const render = () => {
+      TweenMax.set(innerCursor, {
+        x: clientX,
+        y: clientY,
+      });
+
+      requestAnimationFrame(render);
+    };
+    requestAnimationFrame(render);
+  };
+
+  const initRing = () => {
+    const renderR = () => {
+      lastX = lerp(lastX, clientX, 0.02);
+      lastY = lerp(lastY, clientY, 0.02);
+      TweenMax.to(outerCursor, {
+        x: lastX,
+        y: lastY,
+      });
+
+      requestAnimationFrame(renderR);
+    };
+    requestAnimationFrame(renderR);
+  };
+
+  initCursor();
+  initRing();
+
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
     var cursor_of_window = $(window).scrollTop() + $(window).height() / 3;
-
-    /* Check the location of each desired element */
     var bottom_of_window = $(window).scrollTop() + $(window).height();
 
     if (
@@ -140,6 +178,22 @@ $(document).ready(function () {
 
   // Handle background parallax
   $("html").mousemove(function (e) {
+    lastX = lerp(lastX, e.clientX, 0.2);
+    lastY = lerp(lastY, e.clientY, 0.2);
+
+    clientX = e.clientX;
+    clientY = e.clientY;
+
+    TweenMax.set(innerCursor, {
+      x: e.clientX,
+      y: e.clientY,
+    });
+
+    TweenMax.set(outerCursor, {
+      x: lastX,
+      y: lastY,
+    });
+
     var wx = $(window).width();
     var wy = $(window).height();
 
