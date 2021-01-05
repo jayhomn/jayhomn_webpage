@@ -15,7 +15,7 @@
 }
 
 .see-more {
-  padding-top: 0.5vh;
+  padding-top: 10vh;
   color: #fafafa;
   font-size: 1.3vw;
 }
@@ -74,17 +74,18 @@
 }
 
 .project-pic {
-  position: relative;
   height: 22vh;
   background-color: rgb(158, 156, 151);
   margin: 1.4vh 0;
+  text-align: center;
   overflow: hidden;
 }
 
 .project-pic img {
-  position: absolute;
-  left: -3.3%;
   height: 22vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
   transition: 0.5s ease;
 }
 
