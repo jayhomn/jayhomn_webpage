@@ -15,8 +15,8 @@
 }
 
 .see-more {
-  padding-top: 7vh;
-  color: #000000;
+  padding-top: 0.5vh;
+  color: #fafafa;
   font-size: 1.3vw;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .project-entry:hover img {
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 .project-title {
@@ -74,6 +74,7 @@
 }
 
 .project-pic {
+  position: relative;
   height: 22vh;
   background-color: rgb(158, 156, 151);
   margin: 1.4vh 0;
@@ -81,7 +82,9 @@
 }
 
 .project-pic img {
-  height: 21vh;
+  position: absolute;
+  left: -3.3%;
+  height: 22vh;
   transition: 0.5s ease;
 }
 
