@@ -37,6 +37,23 @@ $(document).ready(function () {
         }
       );
     });
+
+    $(".project-entry").each(function () {
+      $(this).hover(
+        (e) => {
+          console.log(e.type);
+          console.log($(this).find(".project-name"));
+          $(this)
+            .find(".project-name")
+            .hoverFlow(e.type, { marginLeft: "-5.5vw" }, "0.5s");
+        },
+        (e) => {
+          $(this)
+            .find(".project-name")
+            .hoverFlow(e.type, { marginLeft: "-5vw" }, "0.5s");
+        }
+      );
+    });
   };
 
   const initCursor = () => {

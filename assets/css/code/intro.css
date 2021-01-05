@@ -167,7 +167,7 @@ a:active {
   display: flex;
   flex-direction: column;
 
-  font-size: 3.5vw;
+  font-size: 3.3vw;
   opacity: 0;
   transform: translateY(10%);
 
