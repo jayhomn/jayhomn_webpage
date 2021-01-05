@@ -14,7 +14,7 @@
 }
 
 .work-title {
-  color: #dbdbdb;
+  color: #ffffff;
 }
 
 .work-line {
@@ -43,6 +43,8 @@
   flex-direction: column;
   width: 33.5vw;
   margin-bottom: 23vh;
+  opacity: 0;
+  transform: translateY(-20%);
 }
 
 .work-entry:nth-of-type(1) {
@@ -81,7 +83,7 @@
 }
 
 .work-entry-company {
-  color: #e1e1e1;
+  color: #ffffff;
   text-align: right;
   margin: 1.2vh 0;
 }
@@ -96,7 +98,7 @@
 
 .work-entry-descript {
   text-align: justify;
-  color: #7d7878;
+  color: #ffffff;
   font-size: 0.9vw;
 }
 

@@ -138,8 +138,10 @@ $(document).ready(function () {
       document.documentElement.scrollTop > 20
     ) {
       $(".navbar").css("top", "0");
+      TweenMax.to($(".intro-scroll-down"), 1, { opacity: "0" });
     } else {
       $(".navbar").css("top", "-50px");
+      TweenMax.to($(".intro-scroll-down"), 1, { opacity: "1" });
     }
 
     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -149,9 +151,38 @@ $(document).ready(function () {
       var bottom_of_object = $(this).position().top + $(this).outerHeight() / 4;
 
       if (bottom_of_window > bottom_of_object) {
-        if ($(this).attr("id") != "project") {
-          timeline.to($(this), 0.8, { opacity: "1" });
-        } else {
+        if ($(this).attr("id") == "about") {
+          timeline
+            .to($(this), 0.8, { opacity: "1" })
+            .to(
+              $(this).find(".about-title"),
+              0.8,
+              {
+                opacity: "1",
+                transform: "translateY(0%)",
+              },
+              "-=0.6"
+            )
+            .to(
+              $(this).find(".about-info"),
+              0.8,
+              {
+                opacity: "1",
+                transform: "translateY(0%)",
+              },
+              "-=0.2"
+            );
+        } else if ($(this).attr("id") == "work") {
+          timeline.to($(this), 0.8, { opacity: "1" }).to(
+            $(this).find(".work-entry"),
+            0.8,
+            {
+              opacity: "1",
+              transform: "translateY(0%)",
+            },
+            "-=0.6"
+          );
+        } else if ($(this).attr("id") == "project") {
           timeline
             .to($(this), 0.8, { opacity: "1" })
             .to(
@@ -172,6 +203,8 @@ $(document).ready(function () {
               },
               "-=0.35"
             );
+        } else {
+          timeline.to($(this), 0.8, { opacity: "1" });
         }
       }
     });

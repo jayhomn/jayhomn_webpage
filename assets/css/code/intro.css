@@ -26,6 +26,38 @@ body {
   padding: 1.3vh 2vw;
 }
 
+.logo {
+  font-family: "Prata", serif;
+  font-size: 1.5vw;
+  letter-spacing: 0.4vw;
+  position: absolute;
+  top: -185%;
+  left: -32%;
+  height: 5vh;
+}
+
+.intro-scroll-down {
+  position: absolute;
+  top: 250%;
+  align-self: center;
+  text-align: center;
+  font-size: 0.9vw;
+
+  animation: pulse-up-down 2s ease-in-out 0.5s infinite;
+}
+
+@keyframes pulse-up-down {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .cursor-dot {
   position: fixed;
   pointer-events: none;
@@ -166,6 +198,7 @@ a:active {
 .options {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   font-size: 3.3vw;
   opacity: 0;

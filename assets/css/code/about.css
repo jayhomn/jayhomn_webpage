@@ -5,6 +5,8 @@
 
 .about-title {
   margin-bottom: -5vh;
+  opacity: 0;
+  transform: translateY(-15%);
 }
 
 .about-grid {
@@ -32,6 +34,8 @@
 .about-info {
   font-size: 1.3vw;
   text-align: justify;
+  opacity: 0;
+  transform: translateY(-10%);
 }
 
 .about-column-two {
