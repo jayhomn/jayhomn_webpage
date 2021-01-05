@@ -41,8 +41,6 @@ $(document).ready(function () {
     $(".project-entry").each(function () {
       $(this).hover(
         (e) => {
-          console.log(e.type);
-          console.log($(this).find(".project-name"));
           $(this)
             .find(".project-name")
             .hoverFlow(e.type, { marginLeft: "-5.5vw" }, "0.5s");
@@ -151,26 +149,30 @@ $(document).ready(function () {
       var bottom_of_object = $(this).position().top + $(this).outerHeight() / 4;
 
       if (bottom_of_window > bottom_of_object) {
-        timeline
-          .to($(this), 0.8, { opacity: "1" })
-          .to(
-            $(this).find(".section-slide"),
-            0.8,
-            {
-              opacity: "1",
-              transform: "translateX(0%)",
-            },
-            "-=0.5"
-          )
-          .to(
-            $(this).find(".project-name"),
-            0.8,
-            {
-              opacity: "1",
-              transform: "translateX(0%)",
-            },
-            "-=0.35"
-          );
+        if ($(this).attr("id") != "project") {
+          timeline.to($(this), 0.8, { opacity: "1" });
+        } else {
+          timeline
+            .to($(this), 0.8, { opacity: "1" })
+            .to(
+              $(this).find(".section-slide"),
+              0.8,
+              {
+                opacity: "1",
+                transform: "translateX(0%)",
+              },
+              "-=0.5"
+            )
+            .to(
+              $(this).find(".project-name"),
+              0.8,
+              {
+                opacity: "1",
+                transform: "translateX(0%)",
+              },
+              "-=0.35"
+            );
+        }
       }
     });
   });
