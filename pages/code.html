@@ -41,17 +41,15 @@
   </head>
 
   <body>
-    <!-- <div class="side-nav oswald-medium">
-      <a href="#about"><div id="nav-about">ABOUT</div></a>
-      <div class="side-nav-line"></div>
-      <a href="#work"><div id="nav-work">WORK</div></a>
-      <div class="side-nav-line"></div>
-      <a href="#project"> <div id="nav-projects">PROJECTS</div></a>
-      <div class="side-nav-line"></div>
-      <a href="#contact"> <div id="nav-contact">CONTACT</div></a>
-    </div> -->
     <div class="cursor-dot"></div>
     <div class="cursor-ring"></div>
+    <div class="navbar">
+      <a href="#intro" class="light">HOME</a>
+      <a href="#about" class="light">ABOUT</a>
+      <a href="#work" class="light">WORK</a>
+      <a href="#project" class="light">PROJECTS</a>
+      <a href="#contact" class="light">CONTACT</a>
+    </div>
     <div id="intro" class="intro">
       <div class="left-options options oswald-medium">
         <a href="#work"><div>WORK</div></a>
@@ -77,7 +75,7 @@
       </div>
     </div>
     <div id="about" class="about section-reveal">
-      <div class="about-title oswald-medium">ABOUT</div>
+      <div class="left-titles about-title oswald-medium">ABOUT</div>
       <div class="about-grid">
         <div class="about-column-one">
           <div class="about-line"></div>
@@ -105,7 +103,7 @@
       </div>
     </div>
     <div id="work" class="work section-reveal">
-      <div class="oswald-medium work-title">WORK</div>
+      <div class="oswald-medium right-titles work-title">WORK</div>
       <div class="work-sub-section">
             <div class="work-entry">
             <div class="work-entry-title">
@@ -190,11 +188,12 @@
       </div>
     </div>
     <div id="project" class="project section-reveal">
-      <div class="about-title oswald-medium">PROJECTS</div>
+      <div class="left-titles oswald-medium">PROJECTS</div>
       <div class="project-container">
-        <div class="project-entry-container project-entry-dressi">
-          <div class="project-entry">
+        <div class="project-entry-container">
+          <div class="project-entry section-slide">
             <div class="project-info">
+      
               <div class="project-info-title">
                 <div class="project-entry-date light">Dec 2020</div>
                 <div class="oswald-medium project-skills">MERN</div>
@@ -203,7 +202,8 @@
                 <div class="oswald-medium project-skills">JS</div>
               </div>
               <div class="project-pic"><img /></div>
-              <div class="project-desc light">
+              <div class="regular project-name">SHOPPLE</div>
+              <!-- <div class="project-desc light">
                 <b>Description:</b> <br />A web-app built using the MERN
                 (MongoDB, Express, React, Node) stack that aims to provide a
                 consolidated place for consumers to see ongoing in-store sales
@@ -213,17 +213,14 @@
                 InVision Studio and implementing it with React. Utilized the
                 gmail API in a node script that parses promotional emails for
                 sale data and inserting it into the MongoDB database.
-              </div>
+              </div> -->
             </div>
           </div>
-          <div class="project-name-line">
-            <div class="light project-name">SHOPPLE</div>
-            <div class="project-line"></div>
-          </div>
         </div>
-        <div class="project-entry-container project-entry-physinterac">
-          <div class="project-entry">
+        <div class="project-entry-container">
+          <div class="project-entry section-slide">
             <div class="project-info">
+   
               <div class="project-info-title">
                 <div class="project-entry-date light">Jul 2020</div>
                 <div class="oswald-medium project-skills">REACT</div>
@@ -231,8 +228,9 @@
                 <div class="oswald-medium project-skills">CSS</div>
                 <div class="oswald-medium project-skills">JS</div>
               </div>
-              <div class="project-pic"><img /></div>
-              <div class="project-desc light">
+              <div class="project-pic"><img src=""/></div>
+              <div class="regular project-name">DRESSI</div>
+              <!-- <div class="project-desc light">
                 <b>Description:</b> <br />A web-app built using React that was
                 initially used for experimenting with API calls and displaying
                 the data in the front-end. This app uses the openweatherapi to
@@ -247,17 +245,14 @@
                 Prototyped and created the front-end design using React and
                 Javascript. Parsed user input for location and used it to make
                 an API call to the openweatherapi to get the temperature data.
-              </div>
+              </div> -->
             </div>
           </div>
-          <div class="project-name-line">
-            <div class="light project-name">DRESSI</div>
-            <div class="project-line"></div>
-          </div>
         </div>
-        <div class="project-entry-container project-entry-shopple">
-          <div class="project-entry">
+        <div class="project-entry-container">
+          <div class="project-entry section-slide">
             <div class="project-info">
+         
               <div class="project-info-title">
                 <div class="project-entry-date light">Aug 2019</div>
                 <div class="oswald-medium project-skills"></div>
@@ -265,8 +260,9 @@
                 <div class="oswald-medium project-skills">C#</div>
                 <div class="oswald-medium project-skills">UNITY</div>
               </div>
-              <div class="project-pic"><img /></div>
-              <div class="project-desc light">
+              <div class="project-pic"><img src=""/></div>
+              <div class="regular project-name ">PHYSINTERAC</div>
+              <!-- <div class="project-desc light">
                 <b>Description:</b> <br />An android app built using the Unity
                 game engine and C#. This app seeks to provide physics students
                 with a more intuitive understanding on free-body diagrams by
@@ -276,12 +272,8 @@
                 Realized the recursive nature of the math involved with
                 calculating forces and developed a recursive algorithm to
                 handle the force calculations in a system.
-              </div>
+              </div> -->
             </div>
-          </div>
-          <div class="project-name-line">
-            <div class="light project-name">PHYSINTERAC</div>
-            <div class="project-line"></div>
           </div>
         </div>
       </div>

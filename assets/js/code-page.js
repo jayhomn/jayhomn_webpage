@@ -1,42 +1,10 @@
 function checkIfInView(element, windowBottom) {
   var bottom_of_object = element.position().top + element.outerHeight() / 4;
   if (windowBottom > bottom_of_object) {
-    if (element.attr("id") == "intro") {
-      $("#nav-about").css("font-weight", "Normal");
-      $("#nav-work").css("font-weight", "Normal");
-      $("#nav-projects").css("font-weight", "Normal");
-      $("#nav-contact").css("font-weight", "Normal");
-    } else {
-      element.animate({ opacity: "1" }, 800);
-      switch (element.attr("id")) {
-        case "about":
-          $("#nav-about").css("font-weight", "Bold");
-          $("#nav-work").css("font-weight", "Normal");
-          $("#nav-projects").css("font-weight", "Normal");
-          $("#nav-contact").css("font-weight", "Normal");
-          break;
-        case "work":
-          $("#nav-about").css("font-weight", "Normal");
-          $("#nav-work").css("font-weight", "Bold");
-          $("#nav-projects").css("font-weight", "Normal");
-          $("#nav-contact").css("font-weight", "Normal");
-          break;
-        case "project":
-          $("#nav-about").css("font-weight", "Normal");
-          $("#nav-work").css("font-weight", "Normal");
-          $("#nav-projects").css("font-weight", "Bold");
-          $("#nav-contact").css("font-weight", "Normal");
-          break;
-        case "contact":
-          $("#nav-about").css("font-weight", "Normal");
-          $("#nav-work").css("font-weight", "Normal");
-          $("#nav-projects").css("font-weight", "Normal");
-          $("#nav-contact").css("font-weight", "Bold");
-          break;
-      }
-    }
+    element.animate({ opacity: "1" }, 800);
   }
 }
+
 const lerp = (a, b, n) => {
   return (1 - n) * a + n * b;
 };
@@ -50,16 +18,13 @@ $(document).ready(function () {
   var lastX = 0;
   var lastY = 0;
 
-  var hovering = false;
-
   const initHovers = () => {
-    const linkItems = $("a");
-    linkItems.each(function () {
+    $("a").each(function () {
       $(this).hover(
         function (e) {
           outerCursor.hoverFlow(
             e.type,
-            { width: "55px", height: "55px", left: "-27.8px", top: "-27.8px" },
+            { width: "65px", height: "65px", left: "-27.8px", top: "-27.8px" },
             "fast"
           );
         },
@@ -75,8 +40,6 @@ $(document).ready(function () {
   };
 
   const initCursor = () => {
-    // transform the innerCursor to the current mouse position
-    // use requestAnimationFrame() for smooth performance
     const render = () => {
       TweenMax.set(innerCursor, {
         x: clientX,
@@ -105,83 +68,6 @@ $(document).ready(function () {
   initCursor();
   initRing();
   initHovers();
-  /* Every time the window is scrolled ... */
-  $(window).scroll(function () {
-    var cursor_of_window = $(window).scrollTop() + $(window).height() / 3;
-    var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-    if (
-      cursor_of_window >=
-        $("#about").position().top + $("#about").outerHeight() &&
-      cursor_of_window <= $("#work").position().top + $("#work").outerHeight()
-    ) {
-      $(".side-nav .side-nav-line").each(function () {
-        $(this).filter(":not(:animated)").animate(
-          { backgroundColor: "white" },
-          {
-            duration: 200,
-            queue: false,
-          }
-        );
-      });
-      $(".side-nav a").each(function () {
-        $(this).filter(":not(:animated)").animate(
-          { color: "white" },
-          {
-            duration: 200,
-            queue: false,
-          }
-        );
-      });
-    } else {
-      $(".side-nav .side-nav-line").each(function () {
-        $(this).filter(":not(:animated)").animate(
-          { backgroundColor: "black" },
-          {
-            duration: 200,
-            queue: false,
-          }
-        );
-      });
-      $(".side-nav a").each(function () {
-        $(this).filter(":not(:animated)").animate(
-          { color: "black" },
-          {
-            duration: 200,
-            queue: false,
-          }
-        );
-      });
-    }
-
-    if (
-      bottom_of_window <=
-      $("#intro").position().top + $("#intro").outerHeight()
-    ) {
-      checkIfInView($("#intro"), bottom_of_window);
-    }
-
-    if (
-      bottom_of_window <=
-      $("#about").position().top + $("#about").outerHeight()
-    )
-      checkIfInView($("#about"), bottom_of_window);
-    if (
-      bottom_of_window <=
-      $("#work").position().top + $("#work").outerHeight()
-    )
-      checkIfInView($("#work"), bottom_of_window);
-    if (
-      bottom_of_window <=
-      $("#project").position().top + $("#project").outerHeight()
-    )
-      checkIfInView($("#project"), bottom_of_window);
-    if (
-      bottom_of_window <=
-      $("#contact").position().top + $("#contact").outerHeight()
-    )
-      checkIfInView($("#contact"), bottom_of_window);
-  });
 
   // Handle background parallax
   $("html").mousemove(function (e) {
@@ -228,6 +114,47 @@ $(document).ready(function () {
       var speed = $(this).attr("data-speed");
       if ($(this).attr("data-revert")) speed *= -1;
       TweenMax.to($(this), 1, { x: 1 - newx * speed, y: 1 - newy * speed });
+    });
+  });
+
+  $(window).scroll(function () {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      $(".navbar").css("top", "0");
+    } else {
+      $(".navbar").css("top", "-50px");
+    }
+
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    $(".section-reveal").each(function () {
+      var timeline = new TimelineMax();
+      var bottom_of_object = $(this).position().top + $(this).outerHeight() / 4;
+
+      if (bottom_of_window > bottom_of_object) {
+        timeline
+          .to($(this), 0.8, { opacity: "1" })
+          .to(
+            $(this).find(".section-slide"),
+            0.8,
+            {
+              opacity: "1",
+              transform: "translateX(0%)",
+            },
+            "-=0.5"
+          )
+          .to(
+            $(this).find(".project-name"),
+            0.8,
+            {
+              opacity: "1",
+              transform: "translateX(0%)",
+            },
+            "-=0.35"
+          );
+      }
     });
   });
 });

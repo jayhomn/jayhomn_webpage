@@ -6,6 +6,26 @@ body {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.884);
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  transition: top 0.6s;
+
+  text-align: center;
+  z-index: 5;
+}
+
+.navbar a {
+  font-size: 0.8vw;
+  padding: 1.3vh 2vw;
+}
+
 .cursor-dot {
   position: fixed;
   pointer-events: none;
@@ -36,27 +56,9 @@ body {
   opacity: 0;
 }
 
-.side-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  position: fixed;
-  top: 35%;
-  left: 2.5%;
-  z-index: 3;
-
+.section-slide {
   opacity: 0;
-
-  font-size: 0.9vw;
-}
-
-.side-nav-line {
-  width: 1px;
-  height: 5vh;
-  margin: 7px 0;
-  background-color: black;
+  transform: translateX(-10%);
 }
 
 a {
@@ -202,4 +204,15 @@ a:active {
   font-size: 6.2vw;
   letter-spacing: 1.2vw;
   z-index: 1;
+}
+
+.left-titles {
+  font-size: 3.5vw;
+  margin-left: 10vw;
+}
+
+.right-titles {
+  text-align: right;
+  font-size: 3.5vw;
+  margin-right: 10vw;
 }
