@@ -4,6 +4,7 @@ body {
   margin: 0;
   overflow: hidden;
   background-color: rgb(45, 57, 64);
+  cursor: none;
 }
 
 .line {
@@ -125,18 +126,9 @@ body {
 .app-bar {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   color: rgba(255, 255, 255, 54);
-}
-
-.hamburger {
-  font-size: 1.5rem;
-  margin-left: 2rem;
-}
-
-.bar-signature {
-  margin-left: 53.1rem;
 }
 
 .intro-background-img {
@@ -329,6 +321,57 @@ body {
 }
 .grow-container:hover .grow:hover {
   width: 40%;
+}
+
+.cursor-dot {
+  position: fixed;
+  pointer-events: none;
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: black;
+}
+
+.cursor-ring {
+  position: fixed;
+  pointer-events: none;
+  width: 35px;
+  height: 35px;
+  left: -18.8px;
+  top: -18.8px;
+  border-radius: 50%;
+  z-index: 12000;
+  border-style: solid;
+  border-color: rgb(151, 151, 151);
+  border-width: 1px;
+}
+
+a {
+  cursor: none;
+  text-decoration: none;
+  transition: color 0.4s ease-in-out;
+}
+
+a:link {
+  color: rgb(255, 255, 255);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: #fff0f0;
+}
+
+/* selected link */
+a:active {
+  color: rgb(255, 255, 255);
 }
 
 .coding-section {

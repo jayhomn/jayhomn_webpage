@@ -21,15 +21,17 @@
       src="https://kit.fontawesome.com/31364ebb5e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/jquery.hoverflow.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   </head>
 
   <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
     <div class="intro-background-img">
       <div class="background-wipe"></div>
       <div class="foreground-wipe"></div>
       <div class="app-bar">
-        <i class="fas fa-bars hamburger"></i>
         <h1 class="light bar-signature">JAY HO</h1>
       </div>
       <div class="intro-div">
@@ -57,7 +59,9 @@
         ></i>
       </div>
       <div class="selector-div grow-container">
-        <div class="grow coding-section light">CODING</div>
+        <div class="grow coding-section light">
+          <a href="./pages/code.html">CODING</a>
+        </div>
         <div class="grow cooking-section light">COOKING</div>
         <div class="grow lifestyle-section light">LIFESTYLE</div>
       </div>
