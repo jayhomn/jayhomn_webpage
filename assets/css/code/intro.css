@@ -168,9 +168,14 @@ a:active {
   height: auto;
   margin-right: -2vw;
 
+  opacity: 0;
+  transform: translateY(10%);
+
   background-image: url("../../images/p_pic.jpg");
   background-size: cover;
   background-position: center top;
+
+  animation: fade-up 0.8s ease-in-out 0.2s both;
 }
 
 .left-options {
