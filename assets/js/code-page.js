@@ -171,6 +171,15 @@ $(document).ready(function () {
                 transform: "translateY(0%)",
               },
               "-=0.2"
+            )
+            .to(
+              $(this).find(".about-skills"),
+              0.8,
+              {
+                opacity: "1",
+                transform: "translateY(0%)",
+              },
+              "-=0.3"
             );
         } else if ($(this).attr("id") == "work") {
           timeline.to($(this), 0.8, { opacity: "1" }).to(

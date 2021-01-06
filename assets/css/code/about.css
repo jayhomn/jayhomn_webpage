@@ -50,6 +50,8 @@
 }
 
 .about-skills {
+  opacity: 0;
+  transform: translateY(-10%);
   height: 10vh;
   display: flex;
   flex-direction: row;
