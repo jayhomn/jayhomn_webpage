@@ -36,6 +36,31 @@ body {
   height: 5vh;
 }
 
+.resume {
+  font-family: "Prata", serif;
+  font-size: 1vw;
+  position: absolute;
+  top: -185%;
+  right: -32%;
+  height: 5vh;
+}
+
+.resume:hover i {
+  animation: pulse-right 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse-right {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .intro-scroll-down {
   position: absolute;
   top: 250%;
