@@ -143,43 +143,6 @@ a:active {
   color: rgb(0, 0, 0);
 }
 
-.wipe-reveal-box-one {
-  position: absolute;
-  top: 1%;
-  left: 0%;
-
-  width: 20.5vw;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  transform-origin: bottom;
-
-  animation: wipe 0.8s ease-in-out both;
-}
-
-.wipe-reveal-box-two {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-
-  width: 20.5vw;
-  height: 100%;
-  background-color: white;
-  z-index: 2;
-  transform-origin: top;
-
-  animation: wipe 1s ease-in-out both;
-}
-
-@keyframes wipe {
-  0% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0.15);
-  }
-}
-
 .intro {
   height: 100vh;
   display: flex;
@@ -240,21 +203,6 @@ a:active {
     opacity: 1;
     transform: translateY(0%);
   }
-}
-
-.white {
-  height: 13vh;
-  width: 20.5vw;
-  background-color: white;
-  z-index: 1;
-}
-
-.white-one {
-  margin-left: 20vw;
-}
-
-.white-two {
-  margin-right: 20vw;
 }
 
 .intro-word-design {
