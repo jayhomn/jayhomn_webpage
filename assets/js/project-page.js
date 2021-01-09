@@ -46,8 +46,8 @@ $(document).ready(function () {
 
   const initRing = () => {
     const renderR = () => {
-      lastX = lerp(lastX, clientX, 0.02);
-      lastY = lerp(lastY, clientY, 0.02);
+      lastX = lerp(lastX, clientX, 1.4);
+      lastY = lerp(lastY, clientY, 1.4);
       TweenMax.to(outerCursor, {
         x: lastX,
         y: lastY,
